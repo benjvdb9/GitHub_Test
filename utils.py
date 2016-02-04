@@ -8,7 +8,7 @@ def fact(n):
     
     Pre: -
     Post: Returns the factorial of 'n'.
-    Throws: ValueError if n < 0
+    Throws: ValueError if n < 0.
     """
     R= math.factorial(n)
     return R
