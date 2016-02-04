@@ -7,15 +7,21 @@ import utils
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        # À compléter...
+        self.assertEqual(utils.fact(0), 1)
+        self.assertEqual(utils.fact(5), 120)
+        self.assertEqual(utils.fact(3), 6)
+        with self.assertRaises(ValueError):
+            utils.fact(-5)
         pass
     
     def test_roots(self):
-        # À compléter...
+        self.assertEqual(utils.roots(0, 1, 0), (0))
+        self.assertEqual(utils.roots(0, 4, -16), (4))
         pass
     
     def test_integrate(self):
-        # À compléter...
+        self.assertEqual(utils.integrate(0, 4, 4), 8)
+        self.assertEqual(utils.integrate(0, 2, 2), 2)
         pass
 
 if __name__ == '__main__':
