@@ -20,6 +20,9 @@ def roots(a, b, c):
     Post: Returns a tuple with zero, one or two elements corresponding
           to the roots of the ax^2 + bx + c polynomial.
     """
+    if a==0 and b==0:
+        return None
+    
     if a==0:
         RS= -c/b
         return (RS)
